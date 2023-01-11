@@ -43,7 +43,8 @@ stage('Push Image') {
     stage('Deploy to EKS'){
       steps{
           script {
-            sh 'kubectl apply -f sample.yaml'
+            sh 'aws eks update-kubeconfig --region ap-south-1 --name demo'
+            sh 'kubectl get svc'
       }
     }
   }
