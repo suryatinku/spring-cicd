@@ -8,7 +8,7 @@ REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/
 }
 
     tools { 
-        maven 'Maven 3.6.3' 
+        maven 'Maven 3.8.7' 
     }
   agent any
   stages {
