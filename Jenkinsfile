@@ -6,6 +6,11 @@ IMAGE_REPO_NAME="javademo"
 IMAGE_TAG="${BUILD_NUMBER}"
 REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"
 }
+
+tools {
+    maven 'M3'
+  }
+  
   agent any
   stages {
     stage('Build') {
