@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: spring-helloworld
-        image: achyuth007/simple-spring:latest
+        image: 098324025508.dkr.ecr.ap-south-1.amazonaws.com/javademo:11
         imagePullPolicy: Always
         ports:
         - containerPort: 80
