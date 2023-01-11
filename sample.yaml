@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-helloworld
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-helloworld
+  template:
+    metadata:
+      labels:
+        app: spring-helloworld
+    spec:
+      containers:
+      - name: spring-helloworld
+        image: achyuth007/simple-spring:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+     
+
